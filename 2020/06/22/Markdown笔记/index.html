@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,10 +16,14 @@
 <meta property="og:site_name" content="Tang&#39;s Blog">
 <meta property="og:description" content="Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。我觉得用于写个人博客是非常不错的选择。这篇博客主要介绍了一下md的基本语法。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2020/06/22/Markdown%E7%AC%94%E8%AE%B0/Users/17738/Linon/themes/yilia/source/asserts/beijin.jpg">
+<meta property="og:image" content="http://static.runoob.com/images/runoob-logo.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/22/Markdown%E7%AC%94%E8%AE%B0/Markdown%E7%AC%94%E8%AE%B0%5C1.png">
 <meta property="article:published_time" content="2020-06-22T12:49:11.000Z">
-<meta property="article:modified_time" content="2020-06-22T16:39:05.396Z">
+<meta property="article:modified_time" content="2020-06-23T15:53:52.940Z">
 <meta property="article:author" content="Linon">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/06/22/Markdown%E7%AC%94%E8%AE%B0/Users/17738/Linon/themes/yilia/source/asserts/beijin.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Tang&#39;s Blog" type="application/atom+xml">
   
@@ -47,7 +52,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/asserts/x.jpg" class="js-avatar">
+			<img src="/asserts/tx.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Linon</a></h1>
@@ -105,7 +110,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/asserts/x.jpg" class="js-avatar">
+				<img src="/asserts/tx.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Linon</h1>
@@ -175,7 +180,6 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。<br>我觉得用于写个人博客是非常不错的选择。<br>这篇博客主要介绍了一下md的基本语法。</p>
-<hr>
 <a id="more"></a>
 
 <h1 id="Markdown基本语法"><a href="#Markdown基本语法" class="headerlink" title="Markdown基本语法"></a>Markdown基本语法</h1><h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><p>在想要设置为标题的文字前面加上#号。</p>
@@ -248,7 +252,30 @@
 <hr>
 <hr>
 <hr>
-<h1 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h1>
+<h1 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h1><p>语法格式：<code>![图片标题](图片地址)</code></p>
+<p>示例：</p>
+<p><code>![示例](\source\asserts\beijin.jpg)</code></p>
+<img src="/2020/06/22/Markdown%E7%AC%94%E8%AE%B0/Users\17738\Linon\themes\yilia\source\asserts\beijin.jpg" alt="示例" style="zoom: 10%;">
+
+<p>这种方法没有办法指定图片的宽带和高度，这时就需要使用到HTML的<code>&lt;img&gt;</code>标签。</p>
+<p>如：<code>&lt;img src=&quot;http://static.runoob.com/images/runoob-logo.png&quot; width=&quot;50%&quot;&gt;</code></p>
+<img src="http://static.runoob.com/images/runoob-logo.png" width="50%">
+
+<hr>
+<h1 id="六、链接"><a href="#六、链接" class="headerlink" title="六、链接"></a>六、链接</h1><p>链接 可以使一段文字变得可以点击，并且指向你所填的网址。</p>
+<p>格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[链接名称](链接地址)</span><br><span class="line">或者</span><br><span class="line">&lt;链接地址&gt;</span><br></pre></td></tr></table></figure>
+
+<p>效果如下：<br>这是<a href="www.baidu.com">百度</a></p>
+<p>这是百度的网址&lt;<a href="http://www.baidu.com&gt;" target="_blank" rel="noopener">www.baidu.com&gt;</a></p>
+<p>我们也可以设置一个变量来保存网址。如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">这个链接用 1 作为网址变量 [Google][1]</span><br><span class="line"></span><br><span class="line">下面是变量，在此赋值（网址）</span><br><span class="line">  [1]: http:&#x2F;&#x2F;www.google.com&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>效果显示如下：</p>
+<p> <a href="www.google.com">Google</a></p>
+<p><img src="/2020/06/22/Markdown%E7%AC%94%E8%AE%B0/Markdown%E7%AC%94%E8%AE%B0%5C1.png" alt></p>
+<hr>
+
       
 
       
@@ -384,7 +411,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown基本语法"><span class="toc-number">1.</span> <span class="toc-text">Markdown基本语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、标题"><span class="toc-number">1.1.</span> <span class="toc-text">一、标题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#这是一级标题"><span class="toc-number">2.</span> <span class="toc-text">这是一级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#这是二级标题"><span class="toc-number">2.1.</span> <span class="toc-text">这是二级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#这是三级标题"><span class="toc-number">2.1.1.</span> <span class="toc-text">这是三级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#这是四级标题"><span class="toc-number">2.1.1.1.</span> <span class="toc-text">这是四级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#这是五级标题"><span class="toc-number">2.1.1.1.1.</span> <span class="toc-text">这是五级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#这是六级标题"><span class="toc-number">2.1.1.1.1.1.</span> <span class="toc-text">这是六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、字体"><span class="toc-number">2.2.</span> <span class="toc-text">二、字体</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#加粗"><span class="toc-number">2.2.0.1.</span> <span class="toc-text">加粗</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#斜体"><span class="toc-number">2.2.0.2.</span> <span class="toc-text">斜体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#斜体再加粗"><span class="toc-number">2.2.0.3.</span> <span class="toc-text">斜体再加粗</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#删除线"><span class="toc-number">2.2.0.4.</span> <span class="toc-text">删除线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#下划线"><span class="toc-number">2.2.0.5.</span> <span class="toc-text">下划线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#脚注"><span class="toc-number">2.2.0.6.</span> <span class="toc-text">脚注</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、引用"><span class="toc-number">2.3.</span> <span class="toc-text">三、引用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、分割线"><span class="toc-number">3.</span> <span class="toc-text">四、分割线</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#五、图片"><span class="toc-number">4.</span> <span class="toc-text">五、图片</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown基本语法"><span class="toc-number">1.</span> <span class="toc-text">Markdown基本语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、标题"><span class="toc-number">1.1.</span> <span class="toc-text">一、标题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#这是一级标题"><span class="toc-number">2.</span> <span class="toc-text">这是一级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#这是二级标题"><span class="toc-number">2.1.</span> <span class="toc-text">这是二级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#这是三级标题"><span class="toc-number">2.1.1.</span> <span class="toc-text">这是三级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#这是四级标题"><span class="toc-number">2.1.1.1.</span> <span class="toc-text">这是四级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#这是五级标题"><span class="toc-number">2.1.1.1.1.</span> <span class="toc-text">这是五级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#这是六级标题"><span class="toc-number">2.1.1.1.1.1.</span> <span class="toc-text">这是六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、字体"><span class="toc-number">2.2.</span> <span class="toc-text">二、字体</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#加粗"><span class="toc-number">2.2.0.1.</span> <span class="toc-text">加粗</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#斜体"><span class="toc-number">2.2.0.2.</span> <span class="toc-text">斜体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#斜体再加粗"><span class="toc-number">2.2.0.3.</span> <span class="toc-text">斜体再加粗</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#删除线"><span class="toc-number">2.2.0.4.</span> <span class="toc-text">删除线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#下划线"><span class="toc-number">2.2.0.5.</span> <span class="toc-text">下划线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#脚注"><span class="toc-number">2.2.0.6.</span> <span class="toc-text">脚注</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、引用"><span class="toc-number">2.3.</span> <span class="toc-text">三、引用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、分割线"><span class="toc-number">3.</span> <span class="toc-text">四、分割线</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#五、图片"><span class="toc-number">4.</span> <span class="toc-text">五、图片</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#六、链接"><span class="toc-number">5.</span> <span class="toc-text">六、链接</span></a></li></ol>
                     </div>
                 </span>
             </div>
