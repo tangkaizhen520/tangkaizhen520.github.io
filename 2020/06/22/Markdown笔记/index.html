@@ -6,24 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Markdown笔记 | Mr.tang</title>
+  <title>Markdown笔记 | Tang&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。我觉得用于写个人博客是非常不错的选择。这篇博客主要介绍了一下md的基本语法。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Markdown笔记">
 <meta property="og:url" content="http://yoursite.com/2020/06/22/Markdown%E7%AC%94%E8%AE%B0/index.html">
-<meta property="og:site_name" content="Mr.tang">
+<meta property="og:site_name" content="Tang&#39;s Blog">
 <meta property="og:description" content="Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。我觉得用于写个人博客是非常不错的选择。这篇博客主要介绍了一下md的基本语法。">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-06-22T12:49:11.000Z">
 <meta property="article:modified_time" content="2020-06-22T16:39:05.396Z">
 <meta property="article:author" content="Linon">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternative" href="/atom.xml" title="Mr.tang" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Tang&#39;s Blog" type="application/atom+xml">
   
   
-    <link rel="icon" href="/themes/yilia/source/">
+    <link rel="icon" href="/asserts/avatar14.png">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -83,7 +83,7 @@
 				
 					<a class="github" target="_blank" href="https://github.com/tangkaizhen520" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="qq" target="_blank" href="#" title="qq"><i class="icon-qq"></i></a>
+					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
 					<a class="bilibili" target="_blank" href="https://space.bilibili.com/434097698" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
@@ -124,7 +124,7 @@
 					
 						<a class="github" target="_blank" href="https://github.com/tangkaizhen520" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="qq" target="_blank" href="#" title="qq"><i class="icon-qq"></i></a>
+						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
 						<a class="bilibili" target="_blank" href="https://space.bilibili.com/434097698" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
@@ -405,6 +405,27 @@
 
   
 
+      <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+<script>
+var gitalk = new Gitalk({
+  clientID: 'tangkaizhen520',
+  clientSecret: 'tangkaizhen520',
+  repo: 'git_comment',
+  owner: 'tangkaizhen520',
+  admin: ['tangkaizhen520'],
+  id: md5(window.location.pathname),
+  distractionFreeMode: true
+})
+
+gitalk.render('gitalk-container')
+</script>
+
+  
+
 
           </div>
         </div>
@@ -414,15 +435,24 @@
     <div id="footer-info">
     	<div class="footer-left">
     		&copy; 2020 Linon
-    		
-	</div>
+    	</div>
       	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+    
+    
+            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      		<span >
+                ��վ�ܷ�������<span id="busuanzi_value_site_pv"></span>��
+            </span>
+            <span class="post-meta-divider">|</span>
+            <span >
+                ��վ�ÿ�����<span id="busuanzi_value_site_uv"></span>��
+            </span>
+    
+    
       	</div>
     </div>
   </div>
 </footer>
-
     </div>
     <script>
 	var yiliaConfig = {
@@ -497,6 +527,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">c++</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
